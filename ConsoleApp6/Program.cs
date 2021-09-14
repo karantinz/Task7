@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +10,17 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            string userInput;
-            int total;
+            string userMessage;
+            int HowMuchToRepeat;
 
             Console.WriteLine("Введите сообщение");
-            userInput = Convert.ToString(Console.ReadLine());
+            userMessage = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Сколько раз оно должно повторяться?");
-            total = Convert.ToInt32(Console.ReadLine());
+            HowMuchToRepeat = Convert.ToInt32(Console.ReadLine());
 
-            for(int i = 0; i < total; i++)
+            for(int i = 0; i < HowMuchToRepeat; i++)
             {
-                Console.WriteLine(userInput);                
+                Console.WriteLine(userMessage);                
             }
             Console.ReadKey();
         }
