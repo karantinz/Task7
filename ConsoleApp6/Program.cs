@@ -11,14 +11,14 @@ namespace ConsoleApp6
         static void Main(string[] args)
         {
             string userMessage;
-            int HowMuchToRepeat;
+            int howMuchToRepeat;
 
             Console.WriteLine("Введите сообщение");
             userMessage = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Сколько раз оно должно повторяться?");
-            HowMuchToRepeat = Convert.ToInt32(Console.ReadLine());
+            howMuchToRepeat = Convert.ToInt32(Console.ReadLine());
 
-            for(int i = 0; i < HowMuchToRepeat; i++)
+            for(int i = 0; i < howMuchToRepeat; i++)
             {
                 Console.WriteLine(userMessage);                
             }
